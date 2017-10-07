@@ -41,7 +41,7 @@ end
 
 def run
   help
-  until command =="exit"
+  until exit
   puts "Please enter a command:"
   command = gets.chomp
 
