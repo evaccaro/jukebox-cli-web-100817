@@ -47,12 +47,19 @@ def run
   if command == "exit"
     exit_jukebox
     while command != "exit"
-  elsif command == "list"
-    list(songs)
-  elsif command == "play"
-    play(songs)
-  elsif command == "help"
-  help
+      if command == "list"
+        list(songs)
+        puts "Please enter a command:"
+        command = gets.chomp
+      elsif command == "play"
+        play(songs)
+        puts "Please enter a command:"
+        command = gets.chomp
+      elsif command == "help"
+        help
+        puts "Please enter a command:"
+        command = gets.chomp
 end
+
 end
 end
