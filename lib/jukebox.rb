@@ -41,7 +41,7 @@ end
 
 def run
   help
-  until exit
+  until exit_jukebox
   puts "Please enter a command:"
   command = gets.chomp
 
