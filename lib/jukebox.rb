@@ -40,10 +40,10 @@ def exit_jukebox
 end
 
 def run
-  while command != "exit"
   help
   puts "Please enter a command:"
   command = gets.chomp
+  until command =="exit"
   if command == "exit"
     exit_jukebox
   elsif command == "list"
