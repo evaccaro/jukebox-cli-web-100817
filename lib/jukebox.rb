@@ -41,10 +41,10 @@ end
 
 def run
   help
-
+  until command == "exit"
   puts "Please enter a command:"
   command = gets.chomp
-  until command == "exit"
+
   if command == "exit"
     exit_jukebox
   elsif command == "list"
