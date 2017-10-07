@@ -43,15 +43,15 @@ def run
   help
   puts "Please enter a command:"
   command = gets.chomp
-  until command =="exit"
-  if command == "exit"
-    exit_jukebox
-  elsif command == "list"
-    list
-  elsif command == "play"
-    play
-  elsif command == "help"
-  help
-end
-end
+#   until command =="exit"
+#   if command == "exit"
+#     exit_jukebox
+#   elsif command == "list"
+#     list
+#   elsif command == "play"
+#     play
+#   elsif command == "help"
+#   help
+# end
+# end
 end
